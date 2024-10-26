@@ -1,0 +1,31 @@
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.time.LocalDateTime;
+
+class A{
+    public void b(){
+        LocalDate o1= LocalDate.now();
+        System.out.println(o1);
+        
+    }
+    
+    public void c(){
+        LocalTime o2 = LocalTime.now();
+        System.out.println(o2);
+    }
+}
+
+class S extends A {
+    public void d(){
+        LocalDateTime i = LocalDateTime.now();
+        System.out.println(i);
+    }
+}
+public class B{
+    public static void main(String args[]){
+        S o = new S();
+        o.b();
+        o.c();
+        o.d();
+    }
+}
